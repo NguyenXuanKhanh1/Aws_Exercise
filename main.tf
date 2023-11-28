@@ -11,5 +11,5 @@ resource "aws_s3_bucket" "khanhnx3_bucket" {
 resource "aws_s3_bucket_object" "file_upload" {
   bucket = aws_s3_bucket.khanhnx3_bucket.id
   key = "file_test.txt"
-  source = "D://VinFast/AWS_Exercise/terraform/Aws_Exercise/file_test.txt"
+  source = "./file_test.txt"
 }
